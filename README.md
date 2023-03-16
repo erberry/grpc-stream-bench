@@ -27,6 +27,8 @@ grpc stream 模式吞吐量测试
 ### 动态流控 BDP
 
 Bandwidth Delay Product (BDP), 即带宽延迟积
+
 用于统计流量大小，并动态调整接收者的窗口大小
+
 统计BDP ping frame和BDP ping frame ack之间的流量大小，作为当前“流量大小”，如解决当前窗口大小，则将窗口调整为BDP（采样流量）的两倍
 			
